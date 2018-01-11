@@ -30,7 +30,7 @@ public class Authorization {
 		String aws_authorization = "AWS4-HMAC-SHA256 Credential=" + aws_AccessKey + dateFormat.format(date) + "/" + aws_region + "/execute-api/aws4_request, SignedHeaders=canal;content-type;host;x-amz-date, Signature=" + aws_signature;
 
 		Request request = new Request.Builder()
-		  .url("https://81ux9i3zvi.execute-api.us-west-2.amazonaws.com/test/promotions?title.id=VPIM")
+		  .url("https://8jhdfjs.execute-api.us-west-2.amazonaws.com/test/promotions?title.id=VPIM")
 		  .get()
 		  .addHeader("canal", "wallet")
 		  .addHeader("Content-Type", "application/x-www-form-urlencoded")
